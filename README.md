@@ -471,4 +471,4 @@ symmetric — see [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
 ## License
 
-[MIT](LICENSE) © 2026 Exon101
+[MIT](LICENSE) © 2026 Exon101x
