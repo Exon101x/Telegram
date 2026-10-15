@@ -2,10 +2,10 @@
 
 # 🔐 Telegram Session Generator — Pyrogram & Telethon
 
-**Maintained by Exon101**
+**Maintained by Exon101x**
 
 <!-- TODO: replace the # below with your actual GitHub repo/profile URL -->
-[![GitHub](https://img.shields.io/badge/GitHub-Exon101-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-Exon101x-181717?style=for-the-badge&logo=github&logoColor=white)](#)
 <!-- TODO: replace the # below with your actual GitLab repo/profile URL -->
 [![GitLab](https://img.shields.io/badge/GitLab-Exon101-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
