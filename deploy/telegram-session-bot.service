@@ -1,0 +1,28 @@
+# systemd unit for running telegram_session_bot.py persistently on a VPS.
+#
+# Install:
+#   sudo cp deploy/telegram-session-bot.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now telegram-session-bot
+#
+# Logs:
+#   journalctl -u telegram-session-bot -f
+#
+# Adjust WorkingDirectory, ExecStart, and User to match your setup.
+
+[Unit]
+Description=Telegram Session Generator Bot (Exon101)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/session-generator-bot
+EnvironmentFile=/opt/session-generator-bot/.env
+ExecStart=/opt/session-generator-bot/.venv/bin/python3 telegram_session_bot.py
+Restart=on-failure
+RestartSec=5
+User=botuser
+
+[Install]
+WantedBy=multi-user.target

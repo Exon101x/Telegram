@@ -1,0 +1,7 @@
+services:
+  session-bot:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    # Session strings are generated in-memory and sent back to the user in
+    # chat — nothing persists inside the container, so no volumes needed.
